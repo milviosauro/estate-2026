@@ -411,10 +411,14 @@ footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-m
         <div class="tabs">
           <button class="tab-btn active" onclick="switchTab(this, 'mrs-vedere')">🎨 Da vedere</button>
           <button class="tab-btn" onclick="switchTab(this, 'mrs-mare')">🌊 Mare</button>
-          <button class="tab-btn" onclick="switchTab(this, 'mrs-coffee')">☕ Caffè</button>
-          <button class="tab-btn" onclick="switchTab(this, 'mrs-mangiare')">🍔 Mangiare</button>
+          <button class="tab-btn" onclick="switchTab(this, 'mrs-vicino')">📍 Vicino a casa</button>
+          <button class="tab-btn" onclick="switchTab(this, 'mrs-esclusive')">✨ Esperienze</button>
+          <button class="tab-btn" onclick="switchTab(this, 'mrs-ristoranti')">🍽️ Ristoranti</button>
+          <button class="tab-btn" onclick="switchTab(this, 'mrs-coffee')">☕ Caffè & Street</button>
+          <button class="tab-btn" onclick="switchTab(this, 'mrs-shopping')">🛍 Shopping</button>
         </div>
 
+        <!-- DA VEDERE -->
         <div id="mrs-vedere" class="tab-panel active">
           <div class="activities-grid">
             <div class="activity-card">
@@ -425,31 +429,56 @@ footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-m
             <div class="activity-card">
               <div class="activity-type type-art">Quartiere storico</div>
               <div class="activity-title">Le Panier — senza mappa</div>
-              <div class="activity-desc">Il quartiere più antico di Marsiglia, pieno di murales di Nhobi, C215 e Alice Pasquini. Non pianificate: perdetevi. La Place des Pistoles — murales di un pescatore di sardine — è il punto di partenza. La Vieille Charité vale una sosta.</div>
+              <div class="activity-desc">Il quartiere più antico di Marsiglia: strade strette che portano a graziose piazzette con piccoli caffè all'aperto. Pieno di murales di Nhobi, C215 e Alice Pasquini. La Vieille Charité vale una sosta.</div>
             </div>
             <div class="activity-card">
               <div class="activity-type type-culture">Centro culturale</div>
               <div class="activity-title">La Friche de la Belle de Mai</div>
-              <div class="activity-desc">Ex fabbrica di tabacco degli anni '90 trasformata in hub creativo su 100.000 m². Gallerie, concerti, skate park, mercato. La terrazza in estate è uno dei punti più autentici della scena underground marsigliese.</div>
+              <div class="activity-desc">Ex fabbrica di tabacco trasformata in hub creativo su 100.000 m². Gallerie, concerti, skate park, mercato. La terrazza in estate è uno dei punti più autentici della scena underground marsigliese.</div>
             </div>
             <div class="activity-card">
               <div class="activity-type type-culture">Museo</div>
               <div class="activity-title">MuCEM — Museo delle Civiltà</div>
-              <div class="activity-desc">Uno degli edifici contemporanei più belli di Francia. La passerella sospesa sul mare regala viste mozzafiato. Ottimo per capire il Mediterraneo come crocevia culturale. Arrivate a piedi dal Vieux-Port.</div>
+              <div class="activity-desc">Uno degli edifici contemporanei più belli di Francia. La passerella sospesa sul mare regala viste mozzafiato. Ottimo per capire il Mediterraneo come crocevia culturale.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-culture">Architettura · Le Corbusier</div>
+              <div class="activity-title">Cité Radieuse & MAMO</div>
+              <div class="activity-desc">La colorata torre degli anni '50 di Le Corbusier. Sulla terrazza sul tetto si trova il MAMO, centro d'arte contemporanea disegnato da Ora-ïto che ha ospitato la sfilata Chanel Cruise. L'ex palestra è oggi spazio espositivo per artisti internazionali.</div>
+              <div class="activity-contact"><span class="activity-phone">📍 280 Boulevard Michelet, 13008</span><a class="activity-link" href="https://mamo.fr" target="_blank">mamo.fr</a></div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-art">Giardino di sculture · solo su appuntamento</div>
+              <div class="activity-title">Friche de l'Escalette</div>
+              <div class="activity-desc">Una vecchia fabbrica di piombo diventata discarica, recuperata dal 2016 da Éric Touchaleaume della Galerie 54. Oggi giardino di sculture visitabile solo d'estate su appuntamento — uno dei luoghi più insoliti di Marsiglia.</div>
+              <div class="activity-contact"><a class="activity-link" href="https://friche-escalette.com/en" target="_blank">friche-escalette.com</a></div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-local">Monastero nascosto</div>
+              <div class="activity-title">Un Monastère (Daki Ling)</div>
+              <div class="activity-desc">In fondo a un cortile di Rue d'Aubagne, nel quartiere Noailles: resti di un monastero del 1248. La sala voltata su 14 pilastri si estende per 300 mq. È stata casa d'aste fino al 1981, oggi spazio culturale. Un tesoro dimenticato.</div>
+              <div class="activity-contact"><span class="activity-phone">📍 45a Rue d'Aubagne, 13001</span></div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-art">Galleria d'arte</div>
+              <div class="activity-title">Galerie 54</div>
+              <div class="activity-desc">La galleria del collezionista Éric Touchaleaume — antiquariato, design e arte contemporanea di altissimo livello. Lo stesso Touchaleaume è dietro la Friche de l'Escalette e diversi restauri chiave di Marsiglia.</div>
+              <div class="activity-contact"><a class="activity-link" href="https://www.instagram.com/galerie_54" target="_blank">@galerie_54</a></div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-local">Villaggio di pescatori</div>
+              <div class="activity-title">Les Goudes</div>
+              <div class="activity-desc">Un caratteristico villaggio di pescatori alla periferia di Marsiglia, alle porte del Parco Nazionale delle Calanques. Calette private lontano dal caos della città. Qui si trova anche il Tuba Club.</div>
             </div>
             <div class="activity-card">
               <div class="activity-type type-local">Mercato</div>
               <div class="activity-title">Marché de Noailles</div>
-              <div class="activity-desc">Il mercato nord-africano nel centro: spezie, harissa, pesce fresco, olive, cous cous. Un viaggio sensoriale frequentato dai residenti dei quartieri popolari. Niente di "curato" per turisti.</div>
-            </div>
-            <div class="activity-card">
-              <div class="activity-type type-local">Shopping indie</div>
-              <div class="activity-title">Boutique del Cours Julien</div>
-              <div class="activity-desc">Tra i murales si nascondono botteghe di vintage raro, fumetterie, dischi in vinile, moda indipendente e libri di seconda mano. Il tipo di shopping che non si trova online.</div>
+              <div class="activity-desc">Il mercato nord-africano nel centro: spezie, harissa, pesce fresco, olive, cous cous. Un viaggio sensoriale frequentato dai residenti dei quartieri popolari.</div>
             </div>
           </div>
         </div>
 
+        <!-- MARE -->
         <div id="mrs-mare" class="tab-panel">
           <div class="activities-grid">
             <div class="activity-card">
@@ -475,63 +504,177 @@ footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-m
           </div>
         </div>
 
-        <div id="mrs-coffee" class="tab-panel">
+        <!-- VICINO A CASA -->
+        <div id="mrs-vicino" class="tab-panel">
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:1.25rem; font-style:italic;">Tutti questi locali si trovano a pochissimi passi dal nostro alloggio in Rue Plan Fourmiguier.</p>
           <div class="locale-list">
             <div class="locale-card">
-              <div class="locale-emoji">☕</div>
+              <div class="locale-emoji">🌿</div>
               <div class="locale-body">
-                <div class="locale-name">Deep Coffee — roastery</div>
-                <div class="locale-desc">Il miglior specialty coffee di Marsiglia, a due passi dal Vieux-Port. Torrefazione propria, beans che cambiano settimanalmente, terrace ombreggiata. Anche deli e riviste. Il cappuccino che cambia le aspettative.</div>
-                <div class="locale-contacts"><span class="locale-addr">📍 Rue Glandeves, 2° arr.</span></div>
+                <div class="locale-name">La Passarelle — pranzo / cena / brunch</div>
+                <div class="locale-desc">Un ristorante nascosto in un giardino, ideale per un pranzo o un brunch sotto la tonnelle. Atmosfera informale e cozy, adiacente al vostro alloggio.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 52 Rue Plan Fourmiguier, 13007</span></div>
               </div>
             </div>
             <div class="locale-card">
-              <div class="locale-emoji">☕</div>
+              <div class="locale-emoji">🐙</div>
               <div class="locale-body">
-                <div class="locale-name">Brûlerie Möka — roastery</div>
-                <div class="locale-desc">Piccola roastery nel 5° arrondissement, terrazza ombreggiata, fondata da Iris. Tostano i propri chicchi con attenzione al terroir. V60, Aeropress e pourover eccellenti.</div>
-                <div class="locale-contacts"><span class="locale-addr">📍 36 Bd Eugène Pierre, 13005</span></div>
+                <div class="locale-name">Crabe - Toro — pranzo / cena</div>
+                <div class="locale-desc">Sulle colline del Panier, vicino al Vieux-Port. Atmosfera informale e fresca: carpaccio di pesce spada, panini con il polpo e un'ottima selezione di vini naturali. Street e conviviale.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/crabetoro" target="_blank">@crabetoro</a></div>
               </div>
             </div>
             <div class="locale-card">
-              <div class="locale-emoji">☕</div>
+              <div class="locale-emoji">🍷</div>
               <div class="locale-body">
-                <div class="locale-name">Pétrin Couchette — caffè e boulangerie</div>
-                <div class="locale-desc">Ibrido specialty café e boulangerie vicino al Vieux-Port. Sourdough fatto in casa, sandwich in pita e bao buns che cambiano ogni giorno. Ottimo per colazione o pranzo veloce.</div>
+                <div class="locale-name">Le Café de L'Abbaye — aperitivo / dopo cena</div>
+                <div class="locale-desc">Un'istituzione, nascosta ma ben conosciuta dai marsigliesi. Bar con piccola piazzetta e vista splendida — parzialmente nascosta — sul Vieux-Port. Storico e autentico.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 3 Rue d'Endoume, 13007</span></div>
               </div>
             </div>
             <div class="locale-card">
-              <div class="locale-emoji">☕</div>
+              <div class="locale-emoji">🍸</div>
               <div class="locale-body">
-                <div class="locale-name">Eclectique — caffè e birra</div>
-                <div class="locale-desc">Nel quartiere Réformés, davanti a una fermata del tram. Patio lastricato, menu scritto a mano, roaster locali (La Tisserie). Di giorno caffè, di sera birra artigianale. Atmosfera vera da quartiere.</div>
+                <div class="locale-name">Gaspard — aperitivo / cocktail bar</div>
+                <div class="locale-desc">Cocktail bar chic e decontracté. Sotto il soffitto blu e i lampadari intrecciati, la decorazione invita al viaggio (Vietnam? Cuba?). Chiedete a Benjamin il suo cocktail preferito: il concombre masqué.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 7 Boulevard Notre Dame, 13006</span><a class="locale-web" href="https://www.bargaspard.com" target="_blank">bargaspard.com</a></div>
               </div>
             </div>
             <div class="locale-card">
-              <div class="locale-emoji">☕</div>
+              <div class="locale-emoji">🍱</div>
               <div class="locale-body">
-                <div class="locale-name">7VB (7-Vie-est-Belle) — nel Panier</div>
-                <div class="locale-desc">Nel cuore del Panier: grandi vetrate, poltrone vintage, cinnamon rolls, caffè specialty. Perfetto per uno stop durante l'esplorazione del quartiere storico.</div>
+                <div class="locale-name">Ippon — pranzo / cena</div>
+                <div class="locale-desc">Cucina fusion marsigliese-giapponese. Formule veloci per il pranzo e piattini da condividere la sera. Creativo e informale.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 7 Rue Lulli, 13001</span><a class="locale-web" href="https://www.instagram.com/ippon.marseille" target="_blank">@ippon.marseille</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🌆</div>
+              <div class="locale-body">
+                <div class="locale-name">Le Toit R2 (Terrasses du Port) — rooftop</div>
+                <div class="locale-desc">Rooftop in stile newyorkese che attira la gioventù branché di Marsiglia. Street art realizzata in tempo reale, burger dei Burger Brothers, piatti thailandesi di "On mange thaï". Un luogo eclettico che incarna il rinnovamento della città.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 9 Quai du Lazaret, 2e</span><a class="locale-web" href="http://www.airdemarseille.com" target="_blank">airdemarseille.com</a></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="mrs-mangiare" class="tab-panel">
+        <!-- ESPERIENZE ESCLUSIVE -->
+        <div id="mrs-esclusive" class="tab-panel">
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">🪸</div>
+              <div class="locale-body">
+                <div class="locale-name">Tuba Club — Les Goudes · colazione / pranzo / aperitivo / cena</div>
+                <div class="locale-desc">Incastonato tra gli scogli del villaggio di pescatori di Les Goudes. Negli anni '40 era l'hotel "Roches Blanches", poi circolo di diving frequentato da Jacques Mayol e Falco, capitano della Calypso di Cousteau. Oggi: tavolini sugli scogli per mangiare con i pieds dans l'eau (crudi di pesce, grigliata, manzo Wagyu) · Bar Pastis con 7 varianti · Bikini's rooftop lounge con tapas catalane e bancone ricavato da uno scafo di barca · Cestini da picnic per trascorrere la giornata su uno scoglio remoto. Architettura curata da Marion Mailaender.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://tuba-club.com/bikini" target="_blank">tuba-club.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🕯️</div>
+              <div class="locale-body">
+                <div class="locale-name">Atelier Renata — cena (solo su prenotazione)</div>
+                <div class="locale-desc">Per una cena speciale: persone diverse si ritrovano per un pasto semplice attorno a un grande tavolo comune. Nessun menu scritto — l'idea è sentirsi a casa. Uno di quei posti di cui si parla ancora anni dopo.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/atelier_renata_marseille" target="_blank">@atelier_renata_marseille</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🧖</div>
+              <div class="locale-body">
+                <div class="locale-name">Spa de l'Hôtel-Dieu — Spa by Clarins</div>
+                <div class="locale-desc">Centro benessere ispirato ai tradizionali lavatoi provenzali. Sei cabine trattamenti, piscina coperta, due saune, due bagni turchi. Trattamento consigliato: massaggio corpo "Clarins en Provence" con sacchetti caldi di lavanda (1h45).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RISTORANTI -->
+        <div id="mrs-ristoranti" class="tab-panel">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin-bottom:.75rem;">🍕 Pizzerie, bistrot e cucina di mare</div>
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">🐟</div>
+              <div class="locale-body">
+                <div class="locale-name">La Boite à Sardine — pranzo / cena</div>
+                <div class="locale-desc">Interpretazioni uniche di pesce fresco da pescatori locali. Atmosfera originale con gilet di salvataggio, stoviglie antiche e scatole di sardine come decorazione. Cucina del sud genuina e radicata.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 2 Boulevard de la Libération, 13001</span><a class="locale-web" href="https://www.laboiteasardine.com" target="_blank">laboiteasardine.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍕</div>
+              <div class="locale-body">
+                <div class="locale-name">L'Eau à la Bouche — pizzeria retrò</div>
+                <div class="locale-desc">Un'amata pizzeria in una bizzarra casa di famiglia a due piani, con atmosfera nostalgica anni '70. Le pizze fresche sono tra le migliori della città. Un posto con carattere.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.pizzerialeaualabouche.fr" target="_blank">pizzerialeaualabouche.fr</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🥘</div>
+              <div class="locale-body">
+                <div class="locale-name">Ripaille — bistrot provenzale</div>
+                <div class="locale-desc">All'altra estremità del Panier. Subito amato dai locali per i suoi piccoli piatti tradizionali: soupe au pistou, pissaladière, tomates à la provençale. Semplice, genuino, corretto.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/ripaille_marseille" target="_blank">@ripaille_marseille</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍜</div>
+              <div class="locale-body">
+                <div class="locale-name">Figure — neo-bistrot</div>
+                <div class="locale-desc">Il noto ristoratore parigino Christophe Juville (Lolo Bistrot, Lolo Cave à Manger) porta la sua idea di cucina nella città natale. Ramen, piatti creativi, atmosfera trendy. Uno dei più discussi del momento.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/figuremarseille" target="_blank">@figuremarseille</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🌿</div>
+              <div class="locale-body">
+                <div class="locale-name">Sepia & Julis — cena nel parco</div>
+                <div class="locale-desc">Un grazioso ristorante situato direttamente dentro a un parco. Cucina raffinata in posizione tranquilla — ideale per una serata diversa dalle solite.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.restaurant-sepia.fr" target="_blank">restaurant-sepia.fr</a></div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin:1.5rem 0 .75rem;">🍷 Cours Julien — wine bar e ristoranti</div>
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">🍷</div>
+              <div class="locale-body">
+                <div class="locale-name">Livingston — wine bar</div>
+                <div class="locale-desc">Aperto dai proprietari di La Mercerie, diventato rapidamente il posto perfetto per la serata al Cours Julien. Vini naturali, atmosfera frequentata e amata dai marsigliesi.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.livingstonmarseille.com" target="_blank">livingstonmarseille.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🐚</div>
+              <div class="locale-body">
+                <div class="locale-name">Limmat — pranzo / cena</div>
+                <div class="locale-desc">Atmosfera casalinga, ottimi piatti a base di pesce fresco e alcune delle migliori moules-frites di Marsiglia. Uno di quei bistrot che si torna a cercare.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://limmatmarseille.com" target="_blank">limmatmarseille.com</a><a class="locale-web" href="https://www.instagram.com/limmatmarseille" target="_blank">@limmatmarseille</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍝</div>
+              <div class="locale-body">
+                <div class="locale-name">La Cantinetta — giardino italiano</div>
+                <div class="locale-desc">Ottimo ristorante sul Cours Julien con bel giardino interno. Specialità italiane con pasta fresca fatta ogni giorno: gnocchetti al ragù di salsiccia e finocchietto, tonarelli al culatello.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 24 Cours Julien, 13006</span><a class="locale-web" href="https://restaurantlacantinetta.fr" target="_blank">restaurantlacantinetta.fr</a></div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin:1.5rem 0 .75rem;">🍔 Burger</div>
           <div class="locale-list">
             <div class="locale-card">
               <div class="locale-emoji">🍔</div>
               <div class="locale-body">
                 <div class="locale-name">Holymelt — smash burger</div>
-                <div class="locale-desc">Gli specialisti del smash burger di Marsiglia. Carne macinata in loco, bun brioche homemade con farina Label Rouge, tutte le sauces fatte in casa. Anche opzione veggie.</div>
+                <div class="locale-desc">Carne macinata in loco, bun brioche homemade con farina Label Rouge, sauces fatte in casa. Anche opzione veggie.</div>
                 <div class="locale-contacts"><span class="locale-addr">📍 42 Rue Mazenod, 2° arr.</span></div>
               </div>
             </div>
             <div class="locale-card">
               <div class="locale-emoji">🍔</div>
               <div class="locale-body">
-                <div class="locale-name">Moon Burger — classico</div>
-                <div class="locale-desc">11 anni di storia, uno dei migliori burger storici di Marsiglia. Atmosfera rilassata, burger della giusta dimensione, farciture creative. Le patatine sono tra le migliori della città.</div>
+                <div class="locale-name">Moon Burger</div>
+                <div class="locale-desc">11 anni di storia, uno dei più amati di Marsiglia. Atmosfera rilassata, farciture creative, patatine eccellenti.</div>
                 <div class="locale-contacts"><span class="locale-addr">📍 27 Bd de la Corderie, 7° arr.</span></div>
               </div>
             </div>
@@ -539,12 +682,152 @@ footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-m
               <div class="locale-emoji">🍔</div>
               <div class="locale-body">
                 <div class="locale-name">La Folie du Burger</div>
-                <div class="locale-desc">Bun del fornaio, burger signature come il "Bengous" e il "Veggie", mini sandwich in scatola da scoperta. Grande successo tra i marsigliesi della zona.</div>
+                <div class="locale-desc">Bun del fornaio, burger signature "Bengous", opzioni veggie. Grande successo tra i marsigliesi della zona.</div>
                 <div class="locale-contacts"><span class="locale-addr">📍 Rue de Rome, 6° arr.</span></div>
               </div>
             </div>
           </div>
-          <p style="font-size:13px; color: var(--text-muted); margin-top: 1rem; font-style: italic;">Da mangiare in giro: Panisse (frittelle di ceci), Pastis, cous cous tunisino a Noailles, Navettes (biscotti fiori d'arancio).</p>
+        </div>
+
+        <!-- CAFFÈ & STREET FOOD -->
+        <div id="mrs-coffee" class="tab-panel">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin-bottom:.75rem;">☕ Specialty Coffee & Roastery</div>
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Deep Coffee — roastery</div>
+                <div class="locale-desc">Il miglior specialty coffee di Marsiglia, a due passi dal Vieux-Port. Torrefazione propria, beans che cambiano settimanalmente, terrace ombreggiata. Anche deli e riviste.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Rue Glandeves, 2° arr.</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Brûlerie Möka — roastery</div>
+                <div class="locale-desc">Piccola roastery nel 5° arr., fondata da Iris. Tostano i propri chicchi con attenzione al terroir. V60, Aeropress e pourover eccellenti. Il sabato è il giorno migliore.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 36 Bd Eugène Pierre, 13005</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Pétrin Couchette — caffè & boulangerie</div>
+                <div class="locale-desc">Pane artigianale a lievitazione naturale e ottimo caffè. Aperto 7 giorni su 7, dalle 09:00 alle 19:00.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 7 Cours Saint Louis, 13001</span><a class="locale-web" href="https://linktr.ee/petrincouchette" target="_blank">Links</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Eclectique — caffè e birra artigianale</div>
+                <div class="locale-desc">Nel quartiere Réformés, patio lastricato, roaster locali (La Tisserie). Di giorno caffè, di sera birra artigianale. Atmosfera vera da quartiere, non costruita per turisti.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">7VB — nel Panier</div>
+                <div class="locale-desc">Nel cuore del Panier: vetrate, poltrone vintage, cinnamon rolls, caffè specialty. Perfetto per uno stop durante l'esplorazione del quartiere storico.</div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin:1.5rem 0 .75rem;">🥐 Pranzi veloci & street food</div>
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">🌊</div>
+              <div class="locale-body">
+                <div class="locale-name">Cecile Food Club — caffè / deli / aperitivo</div>
+                <div class="locale-desc">Sulla mitica Corniche Kennedy: café-deli-takeout con caffè e panini tutto il giorno, birra e vino per l'aperitivo. Ideato da quattro amici d'infanzia con il design di Marion Mailaender.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.ceciledeli.com" target="_blank">ceciledeli.com</a><a class="locale-web" href="https://www.instagram.com/cecilefoodclub" target="_blank">@cecilefoodclub</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🧺</div>
+              <div class="locale-body">
+                <div class="locale-name">Epicerie L'Idéal — bottega gourmet</div>
+                <div class="locale-desc">La bottega di Julia Sammut fa venire voglia di assaggiare tutto. Conserve, spezie, prodotti d'importazione + banco di piatti da gustare sul posto: insalate, torte salate e ottimi sandwich.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 11 Rue d'Aubagne, 13001</span><a class="locale-web" href="https://www.epicerielideal.com" target="_blank">epicerielideal.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍪</div>
+              <div class="locale-body">
+                <div class="locale-name">Le Four des Navettes — forno storico dal 1781</div>
+                <div class="locale-desc">Le navette vendute qui sono considerate le migliori di Marsiglia. La ricetta originale — biscotto secco al profumo di fiori d'arancio — è segreta dal 1781. I marinai le portavano in mare per i lunghi viaggi.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 136 Rue Sainte, 13007</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍷</div>
+              <div class="locale-body">
+                <div class="locale-name">Ivresse — wine bar nel Panier</div>
+                <div class="locale-desc">Un wine bar accogliente nel quartiere storico di Le Panier. Vini naturali, atmosfera intima, clientela di quartiere.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHOPPING -->
+        <div id="mrs-shopping" class="tab-panel">
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">🔧</div>
+              <div class="locale-body">
+                <div class="locale-name">Maison Empereur — dal 1827</div>
+                <div class="locale-desc">Il tempio della ferramenta e dell'emporio da quasi 200 anni. Due piani: saponi di Marsiglia, pentole, coltelli, utensili rari, giocattoli vintage, abiti da lavoro provenzali. Al primo piano oggetti per la casa, cesti, lini, cappelli e colorate espadrille.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 4 Rue des Récolettes, 13001</span><a class="locale-web" href="https://empereur.fr/en" target="_blank">empereur.fr</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🧵</div>
+              <div class="locale-body">
+                <div class="locale-name">Oeuvres Sensibles / Sensible — su appuntamento</div>
+                <div class="locale-desc">L'atelier dell'artista Sarah Espeute, visitabile mercoledì–venerdì su appuntamento. Splendidi oggetti per la casa e tovaglie ricamate a mano. Raro e bellissimo.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 32 Rue Mazagran</span><a class="locale-web" href="https://oeuvres-sensibles.com" target="_blank">oeuvres-sensibles.com</a><a class="locale-web" href="https://www.instagram.com/sarahespeute" target="_blank">@sarahespeute</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🏺</div>
+              <div class="locale-body">
+                <div class="locale-name">Azul Concept Store</div>
+                <div class="locale-desc">Concept store dedicato agli artigiani e creatori del Mediterraneo: accessori per la tavola e borse in tela ricercate. Una selezione curata con un'estetica coerente e bella.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/azulconceptstore" target="_blank">@azulconceptstore</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">👗</div>
+              <div class="locale-body">
+                <div class="locale-name">Azur — abiti plissettati vegetali</div>
+                <div class="locale-desc">Atelier visitabile su appuntamento. Produzione di abiti plissettati e tinti con coloranti di origine vegetale. Un artigianato di altissimo livello estetico.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 23 Rue d'Isoard</span><a class="locale-web" href="https://azur.world" target="_blank">azur.world</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🛋</div>
+              <div class="locale-body">
+                <div class="locale-name">Egg & Honoré</div>
+                <div class="locale-desc">Honoré: boutique di arredamento mediterraneo con poltrone, plaid e lampade in paglia. Al suo interno Elsa (Egg): selezione curata di vintage raro — camicie retro, giacche da lavoro, prezzi accessibili.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 121 Rue Sainte, 13007</span><a class="locale-web" href="https://honoredeco.shop/en" target="_blank">honoredeco.shop</a><a class="locale-web" href="https://www.instagram.com/egg__vintage" target="_blank">@egg__vintage</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">👕</div>
+              <div class="locale-body">
+                <div class="locale-name">Jogging — concept store multimarca</div>
+                <div class="locale-desc">Famoso concept store che unisce etichette emergenti a grandi nomi (Jacquemus, Wales Bonner) insieme a oggetti di design e vini naturali. Il posto dove la moda di Marsiglia incontra il mondo.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 107 Rue Paradis</span><a class="locale-web" href="https://joggingjogging.com/en" target="_blank">joggingjogging.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">📚</div>
+              <div class="locale-body">
+                <div class="locale-name">Ensemble — libreria d'arte e fotografia</div>
+                <div class="locale-desc">Spazio indipendente per libri d'arte, fotografia ed edizioni indipendenti. Selezione editoriale curata da @jointsloose. Aperto mercoledì–sabato, 12:00–18:30.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 7 Rue Chevalier Roze, 13002</span><a class="locale-web" href="https://www.instagram.com/ensemble_books" target="_blank">@ensemble_books</a></div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
