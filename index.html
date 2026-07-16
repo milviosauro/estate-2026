@@ -861,65 +861,360 @@ footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-m
         <p class="dest-desc">Hossegor è la Mecca europea del surf: beach break potenti, onde consistenti e un'atmosfera che mescola la cultura del surf con quella del Pays Basque. Quattro giorni con base qui permettono di fare surf a casa, e di esplorare in giornata il triangolo Biarritz–Bayonne–San Sebastián, con Bilbao come gita più lunga.</p>
 
         <div class="tabs">
-          <button class="tab-btn active" onclick="switchTab(this, 'hoss-surf')">🏄 Surf</button>
-          <button class="tab-btn" onclick="switchTab(this, 'hoss-biarritz')">📍 Biarritz + Bayonne</button>
+          <button class="tab-btn active" onclick="switchTab(this, 'hoss-coffee')">☕ Caffè & Brunch</button>
+          <button class="tab-btn" onclick="switchTab(this, 'hoss-mangiare')">🍽️ Mangiare</button>
+          <button class="tab-btn" onclick="switchTab(this, 'hoss-surf')">🏄 Surf & Attività</button>
+          <button class="tab-btn" onclick="switchTab(this, 'hoss-shopping')">🛍 Shopping</button>
+          <button class="tab-btn" onclick="switchTab(this, 'hoss-biarritz')">📍 Biarritz</button>
           <button class="tab-btn" onclick="switchTab(this, 'hoss-ss')">📍 San Sebastián</button>
           <button class="tab-btn" onclick="switchTab(this, 'hoss-bilbao')">📍 Bilbao</button>
-          <button class="tab-btn" onclick="switchTab(this, 'hoss-mangiare')">🍔 Mangiare</button>
         </div>
 
-        <div id="hoss-surf" class="tab-panel active">
+        <!-- CAFFÈ & BRUNCH -->
+        <div id="hoss-coffee" class="tab-panel active">
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Waxed Coffee — colazione / pranzo</div>
+                <div class="locale-desc">Cabanon dall'estetica industriale gestito da due amici dipendenti dal surf e dalla caffeina. La Marzocco, ottimi espressi, lattes al latte d'avena, caffè ghiacciati. Ma anche pancake ai mirtilli e uova Bénédicte veggie. Il ritrovo dei surfer al mattino.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/waxedcoffee" target="_blank">@waxedcoffee</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Drip Coffee Club — colazione / brunch</div>
+                <div class="locale-desc">All'interno del concept store Wet Talent, zona industriale Pédebert. Caffè di specialità (torrefazione La Cabra) e ottimi Matcha. Piatti colorati, vegetariani e stagionali. Piatto cult: Turkish Eggs (uova alla turca), imperdibili. Bella terrazza esterna.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/drip.coffeeclub" target="_blank">@drip.coffeeclub</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Volt Café — specialty café</div>
+                <div class="locale-desc">La torrefazione di riferimento per il caffè di specialità ad Hossegor. Struttura moderna, luminosa e di grande impatto visivo nella zona industriale. La terrazza esterna è ideale per prendere il sole di prima mattina.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🥥</div>
+              <div class="locale-body">
+                <div class="locale-name">Tika (Capbreton) — colazione / brunch</div>
+                <div class="locale-desc">A Capbreton, ideato dalle sorelle Maud e Danaé. Ideale per un brunch rilassato o per un coloratissimo Açaí bowl servito in una mezza noce di cocco con abbondante burro di arachidi.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🌿</div>
+              <div class="locale-body">
+                <div class="locale-name">Mango Tree — colazione / pranzo / aperitivo</div>
+                <div class="locale-desc">Micro-corner in stile healthy californiano sulle sponde del lago marino. Succhi freschi pressati al momento, smoothies, bowls, cereali, dolci e pane fatto in casa. Tutto bio, prevalentemente locale, dall'orto di Maud e Danaé. Atmosfera da picnic: grandi tappeti sull'erba sotto i pini. Aperto tutti i giorni 09:30–18:30.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Plage du Parc Rosny / 88 Place des Landais</span><a class="locale-web" href="https://lemangotree.com" target="_blank">lemangotree.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍪</div>
+              <div class="locale-body">
+                <div class="locale-name">Sable Chaud (Capbreton) — pasticceria</div>
+                <div class="locale-desc">Piccola pasticceria artigianale nel centro di Capbreton, gestita da una coppia. Dolci di alta pasticceria tanto belli da vedere quanto deliziosi da mangiare. La pasticceria chic della zona.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🥧</div>
+              <div class="locale-body">
+                <div class="locale-name">Chill'In Tartes & Co — pranzo / merenda</div>
+                <div class="locale-desc">Una delle migliori destinazioni per un pranzo casalingo. Menu massimo 4 piatti (torte salate, cake, insalate) e 3 dessert freschissimi. Prodotti freschi, bio e stagionali. Ottima accoglienza informale a prezzi accessibili.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Parc d'activités Pédebert, 156 Avenue des Couteliers</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MANGIARE -->
+        <div id="hoss-mangiare" class="tab-panel">
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">🦪</div>
+              <div class="locale-body">
+                <div class="locale-name">Chez Pif — pranzo / aperitivo / cena</div>
+                <div class="locale-desc">Un'istituzione landese di fronte al lago. Sotto grandi tendoni blu notte, si siedono a lunghe tavole di legno per condividere ostriche fresche dall'allevamento di Hossegor, con una carta di vini del Sud della Francia. Perfetto al tardo pomeriggio per il tramonto sull'acqua.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://chezpifhossegor.fr" target="_blank">chezpifhossegor.fr</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍦</div>
+              <div class="locale-body">
+                <div class="locale-name">Tante Jeanne — pranzo / cena / gelato</div>
+                <div class="locale-desc">Vivace brasserie nata sulle ceneri di uno storico glacier d'infanzia. Arredamento di tendenza, anima familiare. Bowl complete, insalate, burger, ceviche, fish & chips, tartare, tagli di carne e pesce alla piastra. Strepitose coppe gelato artigianali. Non accetta prenotazioni: aspettatevi fila, ne vale la pena.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 45 Avenue Paul Lahary</span><a class="locale-web" href="https://www.tantejeannehossegor.com" target="_blank">tantejeannehossegor.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍵</div>
+              <div class="locale-body">
+                <div class="locale-name">Louvine — pranzo / cena / caffè</div>
+                <div class="locale-desc">Nel centro di Hossegor, piccola terrazza. Rinomato per i poke bowl eccezionali (pollo panato o pesce fresco di giornata). La chicca: uno dei migliori Ice Latte della zona, preparato da Suzy, barista di grande talento. Ottimi cookies fatti in casa.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://louvine-hossegor.fr" target="_blank">louvine-hossegor.fr</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🌱</div>
+              <div class="locale-body">
+                <div class="locale-name">Green Cantine — all day / veggie / ethical</div>
+                <div class="locale-desc">Mensa ecologica moderna con magnifico patio interno e terrazza sul tetto. Self-service con zuppe, wrap, bowl salate e calde con ingredienti bio di stagione. Aperto 7/7, 8:30–20:00. Senza prenotazione, prezzi equi.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.instagram.com/greencantinehossegor" target="_blank">@greencantinehossegor</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍽️</div>
+              <div class="locale-body">
+                <div class="locale-name">La Petite Table (Capbreton) — cena</div>
+                <div class="locale-desc">Bistrot imperdibile per buongustai. Terrazza panoramica sul lago, cucina a vista guidata dallo chef David (ex Alain Ducasse e Bernard Loiseau). Menu che cambia spesso: prodotti locali con spezie ricercate e ricordi di viaggi lontani.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 7 Quai de la Pêcherie, Capbreton</span><a class="locale-web" href="https://lapetitetablecapbreton.fr" target="_blank">lapetitetablecapbreton.fr</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🫖</div>
+              <div class="locale-body">
+                <div class="locale-name">Made With Love (Capbreton) — pranzo / merenda</div>
+                <div class="locale-desc">Mini-salon de thé sul porto dall'arredamento accattivante e girly. Torte salate per pranzo, o torta meringata al limone, mini cupcake al lampone e cheesecake per merenda. Adorabile.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Port de Capbreton</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍔</div>
+              <div class="locale-body">
+                <div class="locale-name">Duckes — burger di anatra</div>
+                <div class="locale-desc">Miglior burger di Hossegor 2024 e 2025, Top 100 di Francia. Anatra delle Landes, bun rosso, piment d'Espelette, crema di pecorino basco. Ingredienti in filiera corta.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://duckesrestaurant.com" target="_blank">duckesrestaurant.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍔</div>
+              <div class="locale-body">
+                <div class="locale-name">SB Artisans Burger</div>
+                <div class="locale-desc">10 anni di storia, carni da cooperative di allevatori baschi (Baserri Km0), pane artigianale, miele di Hossegor, formaggio di chèvre locale.</div>
+                <div class="locale-contacts"><a class="locale-web" href="https://www.sbburger.fr" target="_blank">sbburger.fr</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SURF & ATTIVITÀ -->
+        <div id="hoss-surf" class="tab-panel">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin-bottom:.75rem;">🏄 Scuole di Surf</div>
           <div class="locale-list">
             <div class="locale-card">
               <div class="locale-emoji">🏄</div>
               <div class="locale-body">
-                <div class="locale-name">Remi's Surf School — Truc Vert</div>
-                <div class="locale-desc">I fratelli Julien e Nicolas Remi, ex campioni locali. Cabana direttamente sulla spiaggia del Truc Vert, da 5 anni in su, tutti i livelli. Atmosfera familiare e professionale.</div>
-                <div class="locale-contacts"><a class="locale-web" href="https://www.remisurfschoolcapferret.com" target="_blank">remisurfschoolcapferret.com</a></div>
-              </div>
-            </div>
-            <div class="locale-card">
-              <div class="locale-emoji">🏄</div>
-              <div class="locale-body">
                 <div class="locale-name">Hossegor Surf Center — Culs-Nus</div>
-                <div class="locale-desc">Coach olimpico Paris 2024 e campione europeo. Direttamente sulla spiaggia Culs-Nus, gruppi max 6–8 persone, attrezzatura inclusa, docce in loco. Navetta gratuita da Hossegor centro.</div>
+                <div class="locale-desc">Coach olimpico Paris 2024 e campione europeo. Spiaggia Culs-Nus, gruppi max 6–8 persone, attrezzatura inclusa, docce in loco. Navetta gratuita da Hossegor centro. Tutti i livelli.</div>
                 <div class="locale-contacts"><a class="locale-web" href="https://en.hossegorsurfcenter.com" target="_blank">hossegorsurfcenter.com</a></div>
               </div>
             </div>
             <div class="locale-card">
               <div class="locale-emoji">🏄</div>
               <div class="locale-body">
-                <div class="locale-name">La Pantoufle — tra Truc Vert e Garonne</div>
-                <div class="locale-desc">Fondata da Enzo e Margaux: surf + yoga + natura in spiaggia selvaggia poco affollata. Approccio sostenibile, monitore ex competitore, anche sessioni di yoga Vinyasa all'alba sul bassin.</div>
+                <div class="locale-name">La Pantoufle</div>
+                <div class="locale-desc">Fondata da Enzo e Margaux: surf + yoga + natura. Spiaggia selvaggia poco affollata, approccio sostenibile. Anche sessioni di yoga Vinyasa all'alba. Piccoli gruppi.</div>
                 <div class="locale-contacts"><a class="locale-web" href="https://ecolelapantoufle.fr" target="_blank">ecolelapantoufle.fr</a></div>
               </div>
             </div>
           </div>
-          <p style="font-size:13px; color: var(--text-muted); font-style: italic;">Spot: La Centrale e La Sud per tutti i livelli · La Gravière per il surf avanzato (sede WSL mondiale ogni ottobre)</p>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin:1.5rem 0 .75rem;">🌅 Sport & Attività all'aperto</div>
+          <div class="activities-grid">
+            <div class="activity-card">
+              <div class="activity-type type-surf">Spot surf</div>
+              <div class="activity-title">La Sud — principianti · La Gravière — avanzati</div>
+              <div class="activity-desc">La Sud è lo spot più accessibile con le condizioni migliori. La Gravière è il beach break più potente di Hossegor, sede del campionato mondiale WSL ogni ottobre.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-nature">All'alba</div>
+              <div class="activity-title">Running lungo il lago o l'oceano</div>
+              <div class="activity-desc">Hossegor è una destinazione sportiva per eccellenza. Correre lungo l'oceano o fare il giro del lago al mattino presto regala una luce incredibile. Il territorio è completamente pianeggiante — perfetto per le lunghe distanze.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-nature">Yoga</div>
+              <div class="activity-title">Pedana yoga — La Nord (La Vague)</div>
+              <div class="activity-desc">Sulla spiaggia "La Nord": grande pedana in legno sopraelevata per yoga in autonomia o lezioni collettive di insegnanti locali al mattino. Vista sull'oceano.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-nature">Olistico</div>
+              <div class="activity-title">Moulin Végétal (Orx) — yoga nella foresta</div>
+              <div class="activity-desc">A 15 minuti nell'entroterra. Spazio olistico immerso nella foresta: Hatha Tantra, Yin Yoga e bagni sonori con Lulu Ocean Yoga. Sauna e bagno nordico inclusi.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-nature">Avventura</div>
+              <div class="activity-title">Tour in barca e delfini — porto di Capbreton</div>
+              <div class="activity-desc">Dal porto di Capbreton partono splendidi tour in barca, in particolare al tramonto. Con un po' di fortuna, si avvistano i delfini che popolano questo tratto di oceano.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-nature">A cavallo</div>
+              <div class="activity-title">Passeggiate equestri</div>
+              <div class="activity-desc">Numerosi maneggi organizzano escursioni nella foresta di pini landesi o direttamente sulla spiaggia. Un'esperienza indimenticabile nella natura selvaggia del sud-ovest.</div>
+            </div>
+          </div>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin:1.5rem 0 .75rem;">🌅 Scenari iconici & tramonti</div>
+          <div class="activities-grid">
+            <div class="activity-card">
+              <div class="activity-type type-nature">All'alba</div>
+              <div class="activity-title">Lago di Hossegor</div>
+              <div class="activity-desc">Una passeggiata a piedi in qualsiasi momento, ma all'alba regala lo spettacolo della nebbia che si alza dall'acqua in totale silenzio, circondati solo dalla fauna locale.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-nature">Tramonto</div>
+              <div class="activity-title">Pontile di Azur — Lac de Soustons</div>
+              <div class="activity-desc">A 25–30 minuti da Hossegor, nel villaggio di Azur. Piccolo pontile di legno sul lago — luogo selvaggio e intimo per un picnic o per il tramonto che si riflette sull'acqua.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-nature">Passeggiata</div>
+              <div class="activity-title">I Pontili sulle Dune (Les Pontons)</div>
+              <div class="activity-desc">Camminamenti in legno sospesi per proteggere la flora delle dune. I più suggestivi lungo le spiagge di Labenne, Capbreton e Seignosse — perfetti per una passeggiata al tramonto.</div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-type type-local">Nascosta</div>
+              <div class="activity-title">Chapelle de Sainte-Thérèse (Labenne)</div>
+              <div class="activity-desc">Suggestiva cappella storica in posizione insolita: direttamente in mezzo alle dune di sabbia, a ridosso della spiaggia di Labenne. Uno di quei posti che non ti aspetti.</div>
+            </div>
+          </div>
+          <p style="font-size:13px;color:var(--text-muted);font-style:italic;margin-top:1rem;">🚲 Spostarsi in bici: il mezzo definitivo. Tutto è pianeggiante, piste ciclabili collegano ogni punto in ~15 minuti (Hossegor–Capbreton, zona industriale).</p>
+        </div>
+
+        <!-- SHOPPING -->
+        <div id="hoss-shopping" class="tab-panel">
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">👙</div>
+              <div class="locale-body">
+                <div class="locale-name">Albertine Swim — moda mare couture</div>
+                <div class="locale-desc">Nato sulle spiagge del sud-ovest francese, Albertine è il marchio culto locale per costumi da bagno chic, lingerie e capi da spiaggia. Boutique estiva che riflette lo stile solare e disinvolto della costa basca.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 17 Allée Louis Pasteur, Soorts-Hossegor</span><a class="locale-web" href="https://www.albertine-swim.com" target="_blank">albertine-swim.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🏭</div>
+              <div class="locale-body">
+                <div class="locale-name">Wet Talent — concept store</div>
+                <div class="locale-desc">Nella zona industriale Pédebert, ospita il Drip Coffee Club. Abbigliamento, accessori di design, prodotti di bellezza naturali e oggetti per la casa. Il posto per scoprire marchi di nicchia internazionali.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🛒</div>
+              <div class="locale-body">
+                <div class="locale-name">Mercato Tradizionale di Hossegor</div>
+                <div class="locale-desc">Centro città, davanti al Municipio. Banchi alimentari, spezie, ceramisti, fotografi, artigiani. Da cercare: lo stand di Janis con le borse in crochet fatte a mano. Consigliato arrivare prima delle 10:00.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Soorts-Hossegor, davanti al Municipio · Domeniche (31 mar–3 nov) · Mercoledì (1 giu–30 set) · Venerdì (15 giu–15 set) · 9:00–13:30</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🎨</div>
+              <div class="locale-body">
+                <div class="locale-name">Les Popotes — ceramica & caffè</div>
+                <div class="locale-desc">Concept store colorato, ideale per i giorni di pioggia. Caffetteria (ottimi caffè e dolci) + atelier di pittura su ceramica: si sceglie un pezzo grezzo (tazza, piatto) e si trascorrono un paio d'ore a dipingerlo in totale relax.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🏷</div>
+              <div class="locale-body">
+                <div class="locale-name">Outlet Zona Industriale Pédebert</div>
+                <div class="locale-desc">Enormi negozi outlet dei marchi surf: Billabong, Rip Curl, Element a prezzi di fabbrica. Consigliato in particolare l'outlet di Carhartt WIP per ottimi affari su streetwear.</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="hoss-biarritz" class="tab-panel">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin-bottom:.75rem;">📍 Da vedere & fare</div>
           <div class="activities-grid">
             <div class="activity-card">
               <div class="activity-type type-local">Imperdibile</div>
               <div class="activity-title">Pelota Basca dal vivo</div>
-              <div class="activity-desc">Il Cesta Punta Summer League a Biarritz porta i migliori giocatori del mondo. Ogni sera al Fronton Jean-Pierre Abeberry, ingresso ~€5–10. Sport ancestrale basco in atmosfera autentica. Anche iniziazioni al Basque Pelota Club.</div>
+              <div class="activity-desc">Il Cesta Punta Summer League porta i migliori giocatori del mondo ogni sera al Fronton Jean-Pierre Abeberry. Ingresso ~€5–10. Sport ancestrale basco in atmosfera autentica. Anche iniziazioni al Basque Pelota Club.</div>
               <div class="activity-contact"><a class="activity-link" href="https://cestabiarritz.fr" target="_blank">cestabiarritz.fr</a></div>
             </div>
             <div class="activity-card">
-              <div class="activity-type type-food">Mercato</div>
-              <div class="activity-title">Les Halles de Biarritz — colazione</div>
-              <div class="activity-desc">Il mercato coperto per iniziare la giornata: prodotti baschi, fromages, jambon, ostriche con vino bianco. La scena locale si ritrova qui la mattina — completamente diverso dai turisti della Grande Plage.</div>
-            </div>
-            <div class="activity-card">
-              <div class="activity-type type-nature">Spiaggia</div>
+              <div class="activity-type type-nature">Spiaggia dei locals</div>
               <div class="activity-title">Côte des Basques</div>
-              <div class="activity-desc">Evitate la Grande Plage (turisti). La Côte des Basques è dove fanno surf i locals di Biarritz — onde potenti, vista sulle ville Belle Époque, atmosfera completamente diversa.</div>
+              <div class="activity-desc">Evitate la Grande Plage. La Côte des Basques è dove fanno surf i locals — onde potenti, vista sulle ville Belle Époque. Ed è qui che si trovano Etxola Bibi e Carlos Biarritz per un aperitivo al tramonto sull'oceano.</div>
             </div>
             <div class="activity-card">
               <div class="activity-type type-culture">Bayonne</div>
               <div class="activity-title">Casco storico e mercato del venerdì</div>
-              <div class="activity-desc">Bayonne ha uno dei centri storici più belli del Paese Basco francese. Il Quai Chaho ospita i brocanteurs ogni venerdì mattina (8h–13h). Il Jambon de Bayonne si compra direttamente dai produttori.</div>
+              <div class="activity-desc">Uno dei centri storici più belli del Paese Basco francese. Il Quai Chaho ospita i brocanteurs ogni venerdì mattina (8h–13h). Il Jambon de Bayonne si compra direttamente dai produttori.</div>
+            </div>
+          </div>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin:1.5rem 0 .75rem;">🍽️ Mangiare & bere</div>
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">🥐</div>
+              <div class="locale-body">
+                <div class="locale-name">Halles de Biarritz — colazione / pranzo</div>
+                <div class="locale-desc">Il cuore gastronomico di Biarritz. Due padiglioni: frutti di mare e pesce, salumi formaggi e verdure. Ideale per colazione o pranzo in piedi tra i banchi: gâteau basque, prosciutto di Bayonne, formaggi di pecora. Da cercare: Maison Dezamy per i migliori gelati artigianali della città. Aperto tutti i giorni 7:30–14:00.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Rue des Halles, 64200 Biarritz</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">☕</div>
+              <div class="locale-body">
+                <div class="locale-name">Lobita — specialty café</div>
+                <div class="locale-desc">Micro-café ultra curato e alla moda, perfetto per iniziare la giornata con un caffè di alta specialità o un eccezionale Chai Latte. Ottime proposte da forno dolci.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🌊</div>
+              <div class="locale-body">
+                <div class="locale-name">Etxola Bibi — pranzo / aperitivo</div>
+                <div class="locale-desc">Guinguette all'aria aperta sulla falesia che domina la Côte des Basques. Pranzo semplice e fresco o aperitivo con taglieri e vino affacciati sull'oceano. Uno dei punti più spettacolari per guardare i surfisti e il tramonto sull'Atlantico. Consigliata da tutte le guide di stile francesi.</div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍹</div>
+              <div class="locale-body">
+                <div class="locale-name">Carlos Biarritz — aperitivo / cena</div>
+                <div class="locale-desc">Il punto di ritrovo immancabile dopo una giornata in spiaggia (consigliato da Grand Numéro e Ideat). Atmosfera festosa, rilassata e di tendenza: cocktail e piatti sfiziosi guardando il sole tuffarsi nell'Atlantico.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Côte des Basques</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🍷</div>
+              <div class="locale-body">
+                <div class="locale-name">Cheri Bibi — aperitivo / cena</div>
+                <div class="locale-desc">Neo-bistrot e bar a vini naturali dall'atmosfera conviviale e rilassata. Piattini gourmet stagionali da condividere, salumi artigianali e ottima selezione di vini da viticoltori indipendenti.</div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:500;margin:1.5rem 0 .75rem;">🛍 Shopping</div>
+          <div class="locale-list">
+            <div class="locale-card">
+              <div class="locale-emoji">👗</div>
+              <div class="locale-body">
+                <div class="locale-name">Duchatel — high-end multibrand</div>
+                <div class="locale-desc">L'indirizzo moda per eccellenza di Biarritz, da oltre 15 anni in Avenue Édouard VII. Spazio monumentale e minimalista in pietra e marmo. Grandi maison internazionali + marchi di nicchia e designer emergenti scovati in tutto il mondo. Lusso sussurrato, non ostentato.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Avenue Édouard VII</span><a class="locale-web" href="https://duchatel.com/en" target="_blank">duchatel.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">👙</div>
+              <div class="locale-body">
+                <div class="locale-name">Albertine Swim — moda mare</div>
+                <div class="locale-desc">Il primo e storico negozio del marchio basco di costumi da bagno couture e abbigliamento da spiaggia chic. Il posto per acquistare un pezzo unico di design locale.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 54 Rue Gambetta</span><a class="locale-web" href="https://www.albertine-swim.com" target="_blank">albertine-swim.com</a></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">🏺</div>
+              <div class="locale-body">
+                <div class="locale-name">Les Bernadettes — concept store</div>
+                <div class="locale-desc">Curatissimo concept store con il meglio dell'artigianato basco contemporaneo: oggettistica per la casa, cancelleria illustrata, candele artigianali, bijoux d'autore. Souvenir unici lontani dai soliti circuiti.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 13 Avenue Foch</span></div>
+              </div>
+            </div>
+            <div class="locale-card">
+              <div class="locale-emoji">👔</div>
+              <div class="locale-body">
+                <div class="locale-name">Madame, Monsieur — moda multibrand</div>
+                <div class="locale-desc">Boutique multimarca per lo stile casual-chic parigino sulla costa basca. Abbigliamento femminile e maschile, calzature e accessori con tagli impeccabili e materiali di alta qualità.</div>
+                <div class="locale-contacts"><span class="locale-addr">📍 Avenue Victor Hugo</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -1064,27 +1359,6 @@ footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-m
           </div>
         </div>
 
-        <div id="hoss-mangiare" class="tab-panel">
-          <div class="locale-list">
-            <div class="locale-card">
-              <div class="locale-emoji">🍔</div>
-              <div class="locale-body">
-                <div class="locale-name">Duckes — burger di anatra</div>
-                <div class="locale-desc">Eletto miglior burger di Hossegor 2024 e 2025, Top 100 di Francia. Il burger di anatra delle Landes con bun rosso, piment d'Espelette, crema di pecorino basco. Ingredienti in filiera corta dal Sud-Ovest.</div>
-                <div class="locale-contacts"><a class="locale-web" href="https://duckesrestaurant.com" target="_blank">duckesrestaurant.com</a></div>
-              </div>
-            </div>
-            <div class="locale-card">
-              <div class="locale-emoji">🍔</div>
-              <div class="locale-body">
-                <div class="locale-name">SB Artisans Burger</div>
-                <div class="locale-desc">10 anni di storia, carni da cooperative di allevatori baschi (Baserri Km0), pane artigianale. Miele di Hossegor, formaggio di chèvre locale. Un burger con un'etica.</div>
-                <div class="locale-contacts"><a class="locale-web" href="https://www.sbburger.fr" target="_blank">sbburger.fr</a></div>
-              </div>
-            </div>
-          </div>
-          <p style="font-size:13px; color: var(--text-muted); margin-top: 1rem; font-style: italic;">Da mangiare in giro: Gilda (acciuga+oliva+peperone) · Txakoli · Cheesecake La Viña · Jambon de Bayonne · Ostriche al mercato di Biarritz</p>
-        </div>
 
       </div>
     </details>
